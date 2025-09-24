@@ -51,12 +51,12 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+      flex-direction: column;
     }
 
     #hero {
       background: linear-gradient(135deg, var(--mclaren-orange), #ff914d);
       color: var(--text-dark);
-      flex-direction: column;
     }
 
     #about {
@@ -79,13 +79,14 @@
       padding: 2rem 0;
     }
 
-    /* Hero image */
+    /* Hero image - วงกลม */
     .hero-img {
-      max-width: 280px;
+      max-width: 600px;
       margin-bottom: 2rem;
       border-radius: 50%;
-      border: 6px solid rgba(255,255,255,0.8);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      border: 6px solid rgba(255,255,255,0.9);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      object-fit: cover;
     }
   </style>
 </head>
@@ -94,15 +95,15 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Your Name</a>
+      <a class="navbar-brand fw-bold" href="#">About me</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMain">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#showcase">Showcase</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#showcase">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -112,12 +113,12 @@
   <!-- Hero -->
   <section id="hero">
     <div class="container">
-     <!-- Hero image -->
-      <img src="rush project/1709041776016.jpg" alt="Profile" class="hero-img">
+      <!-- รูปวงกลม -->
+      <img src="me.jpg" alt="My Photo" class="hero-img">
       
       <!-- ข้อความ -->
-      <h1 class="display-4 fw-bold">Welcome to My Portfolio</h1>
-      <p class="lead">McLaren Style — Orange & Gray</p>
+      <h1 class="display-4 fw-bold">Sasin Warachawanwanich</h1>
+      <p class="lead">Econ KMITL Business School</p>
       <a class="btn btn-dark mt-3" href="#showcase">ดูผลงาน</a>
     </div>
   </section>
@@ -125,29 +126,43 @@
   <!-- About -->
   <section id="about">
     <div class="container">
-      <h2 class="fw-bold mb-4 text-warning">About Me</h2>
-      <p>ใส่ข้อมูลแนะนำตัวเองได้ยาว ๆ เช่น ประวัติการศึกษา ประสบการณ์ และความสนใจ</p>
+      <h2 class="fw-bold mb-4 text-warning">Skills</h2>
+      <p>Play Piano</p>
+       <p>Perfect Pitch</p>
     </div>
   </section>
 
   <!-- Showcase -->
-  <section id="showcase">
+   <section id="showcase">
     <div class="container">
       <h2 class="fw-bold mb-4">Showcase</h2>
-      <p class="mb-5">ใส่โปรเจกต์หรือผลงาน พร้อมภาพและรายละเอียด</p>
-      <div class="row g-4">
-        <div class="col-md-4"><div class="p-4 bg-white shadow-sm">Project 1</div></div>
-        <div class="col-md-4"><div class="p-4 bg-white shadow-sm">Project 2</div></div>
-        <div class="col-md-4"><div class="p-4 bg-white shadow-sm">Project 3</div></div>
+      <p class="mb-5">ตัวอย่างโปรเจกต์ที่เคยทำ</p>
+      <div class="row g-4 justify-content-center">
+        
+        <!-- Project 1 -->
+        <div class="col-md-5">
+          <div class="p-5 bg-white shadow-sm rounded text-start">
+            <h5 class="fw-bold">Project 1</h5>
+            <p class="text-muted mb-0">รายละเอียดโปรเจกต์นี้ เช่น เทคโนโลยีหรือฟีเจอร์หลัก</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-5">
+          <div class="p-5 bg-white shadow-sm rounded text-start">
+            <h5 class="fw-bold">Project 2</h5>
+            <p class="text-muted mb-0">รายละเอียดโปรเจกต์นี้ เช่น สิ่งที่เรียนรู้หรือผลลัพธ์</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
-
   <!-- Contact -->
   <section id="contact">
     <div class="container">
       <h2 class="fw-bold mb-4 text-warning">Contact</h2>
-      <p>Email: you@example.com | GitHub: yourgithub</p>
+      <p>Email: 68100475@kmitl.ac.th | Ig: sasinnook__</p>
     </div>
   </section>
 
